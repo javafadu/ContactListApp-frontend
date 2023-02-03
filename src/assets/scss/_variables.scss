@@ -1,8 +1,20 @@
-$color1: rgb(102,114,146);
-$color2: rgb(141,157,182);
-$color3: rgb(188,202,214);
-$color4: rgb(241,227,221);
+$color1: rgb(0, 51, 105);
+$color2: rgb(141, 157, 182);
+$color3: rgb(188, 202, 214);
+$color4: rgb(241, 227, 221);
 $color5: rgb(15, 15, 15);
 
 /* Customize Bootstrap */
-$primary: $color1;
+$font-family-sans-serif : "Montserrat";
+$primary : $color1;
+$navbar-light-color : $color5;
+$nav-link-font-weight: 600;
+$navbar-light-hover-color : $color1;
+$navbar-light-active-color : $color1;
+$input-btn-padding-x : 0.8rem;
+$input-btn-padding-y : 0.4rem;
+
+/* Customize Sweet Alert */
+$swal2-confirm-button-background-color: $color1;
+$swal2-cancel-button-background-color: $color3;
+$swal2-question : $color1;

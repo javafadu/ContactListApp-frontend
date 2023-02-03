@@ -1,6 +1,6 @@
 export const settings = {
   apiURL: "https://contact-list-app.herokuapp.com/",
-  siteName: "KN ContactList",
+  siteName: "Contact List App",
   siteUrl: "contact-list-app-seven.vercel.app/",
   email: "javafadu@gmail.com",
   phone1: "(543)-221-1414",
