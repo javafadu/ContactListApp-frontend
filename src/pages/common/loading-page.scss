@@ -1,0 +1,12 @@
+@use "../../assets/scss/variables" as v;
+
+.loading-page {
+    background-color: v.$color2;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+
+}
