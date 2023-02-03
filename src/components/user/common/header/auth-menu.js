@@ -4,6 +4,7 @@ import { useDispatch, useSelector, useStore } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom';
 import { logout } from '../../../../store/slices/auth-slice';
 import { questionConfirmCancel } from '../../../../utils/functions/swal';
+import "./auth-menu.scss";
 
 const AuthMenu = () => {
 
@@ -29,8 +30,7 @@ const AuthMenu = () => {
         <div className='auth-menu'>
             {isUserLogin ?
 
-
-                <Dropdown>
+                <Dropdown align="end">
                     <Dropdown.Toggle variant="primary" id="dropdown-basic">
                         {user.name}
                     </Dropdown.Toggle>
@@ -51,8 +51,8 @@ const AuthMenu = () => {
 
                 :
 
-                <div>
-                    <Button variant="white" as={Link} to="/auth">Login</Button>
+                <div >
+                    <Button variant="light" as={Link} to="/auth" className="mx-2">Login</Button>
                     <Button variant="primary" as={Link} to="/auth">Register</Button>
                 </div>
 

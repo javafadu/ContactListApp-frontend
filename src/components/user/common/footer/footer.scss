@@ -1,0 +1,14 @@
+@use "../../../../assets/scss/variables" as v;
+
+.footer {
+    background-color: v.$color3;
+    color: v.$color1;
+    padding: 3rem 0;
+
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+}
