@@ -1,0 +1,41 @@
+@use "../../../../assets/scss/variables" as v;
+
+.auth-menu {
+    padding: 2rem auto;
+
+    .dropdown-menu {
+        padding: 1.5rem 0;
+    }
+
+    button,
+    a[role="button"],
+    button:hover,
+    button:focus {
+        @media (max-width: 991px) {
+            background: none !important;
+            border: none;
+            padding: 1rem 0;
+            font-weight: 500;
+            color: v.$color1;
+            display: block;
+            text-align: left;
+
+        }
+    }
+
+    .dropdown-menu {
+        @media (max-width: 991px) {
+            position: static;
+            border: none;
+            margin: 0;
+            padding: 0
+        }
+    }
+
+    .dropdown-divider {
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+
+}
