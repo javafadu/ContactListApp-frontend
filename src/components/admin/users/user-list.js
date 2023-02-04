@@ -73,10 +73,11 @@ const UserList = () => {
                 <Container className="list-container">
                     <h2>{result}</h2>
                     <Row>
-                        <Col md={3}>ID</Col>
+                        <Col md={1}>ID</Col>
                         <Col md={3}>NAME</Col>
                         <Col md={3}>E-MAIL</Col>
                         <Col md={3}>DATE OF REGISTRATION</Col>
+                        <Col md={2}>EDIT/DELETE</Col>
                     </Row>
                     <hr
                         style={{
@@ -90,10 +91,11 @@ const UserList = () => {
                         <Row key={index}>
                             <Row>
 
-                                <Col md={3}>{user.id}</Col>
+                                <Col md={1}>{user.id} </Col>
                                 <Col md={3}>{user.name}</Col>
                                 <Col md={3}>{user.email}</Col>
                                 <Col md={3}>{user.registerDate}</Col>
+                                <Col md={2}><a href={`./edit-user/?id=${user.id}&email=${user.email}`}>EDIT/DELETE</a></Col>
                             </Row>
                             <div>
                                 <hr />

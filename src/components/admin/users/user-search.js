@@ -16,7 +16,7 @@ const UserSearch = () => {
     };
 
     const handleSubmitBookAdd = () => {
-        let path = `/admin/user-add`;
+        let path = `/admin/add-user`;
         navigate(path);
     };
 
