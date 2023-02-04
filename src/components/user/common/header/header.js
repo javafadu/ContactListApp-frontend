@@ -5,6 +5,7 @@ import logo from "../../../../assets/img/logo-widen.png";
 import { settings } from "../../../../utils/settings";
 import AuthMenu from "./auth-menu";
 import "./header.scss";
+import { AiFillHome } from "react-icons/ai";
 
 const Header = () => {
   return (
@@ -20,7 +21,7 @@ const Header = () => {
             className="mx-auto my-2 my-lg-0"
 
           >
-            <Nav.Link as={Link} to="/">Home</Nav.Link>
+            <Nav.Link as={Link} to="/"><span><AiFillHome /> </span>Home</Nav.Link>
 
           </Nav>
 
