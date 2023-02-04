@@ -17,6 +17,12 @@ export const getAuthUser = () => {
     return axios.get(`${API_URL}/users`, { headers: authHeader() });
 };
 
+export const getUserWithId = (userId) => {
+    return axios.get(`${API_URL}/users/${userId}`, {
+      headers: authHeader(),
+    });
+  };
+
 
 
 export const getAllUsers = (
@@ -33,4 +39,22 @@ export const getAllUsers = (
         }
     );
 };
+
+export const createUser = (user) => {
+    return axios.post(`${API_URL}/users`, user, {
+      headers: authHeader(),
+    });
+  };
+
+  export const updateUser = (userId, user) => {
+    return axios.put(`${API_URL}/users/${userId}`, user, {
+      headers: authHeader(),
+    });
+  };
+  
+  export const deleteUser = (userId) => {
+    return axios.delete(`${API_URL}/users/${userId}`, {
+      headers: authHeader(),
+    });
+  };
 

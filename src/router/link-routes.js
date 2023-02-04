@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import AdminAddUser from "../components/admin/user-add/user-add";
+import AdminUserEdit from "../components/admin/user-edit/user-edit";
 import AdminUsers from "../components/admin/users/users";
 import ScrollToTop from "../components/common/scroll-to-top/scroll-to-top";
 import AdminHomePage from "../pages/admin/admin-home-page";
@@ -30,6 +32,9 @@ const LinkRoutes = () => {
           <Route path="admin">
             <Route index element={<ProtectedRoute admin={true}><AdminTemplate><AdminHomePage /></AdminTemplate></ProtectedRoute>} />
             <Route path="users" element={<ProtectedRoute admin={true}><AdminTemplate><AdminUsers /></AdminTemplate></ProtectedRoute>}></Route>
+            <Route path="add-user" element={<ProtectedRoute admin={true}><AdminTemplate><AdminAddUser /></AdminTemplate></ProtectedRoute>}></Route>
+            <Route path="edit-user" element={<ProtectedRoute admin={true}><AdminTemplate><AdminUserEdit /></AdminTemplate></ProtectedRoute>}></Route>
+
           </Route>
 
           <Route path="*" element={<UserTemplate><NotFoundPage /></UserTemplate>}></Route>
