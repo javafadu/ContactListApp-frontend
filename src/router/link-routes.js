@@ -4,6 +4,7 @@ import NotFoundPage from "../pages/common/not-found-page";
 import UnAuthorizedPage from "../pages/common/un-authorized-page";
 import ContactDetailPage from "../pages/user/contact-detail-page";
 import HomePage from "../pages/user/home-page";
+import PrivacyPolicyPage from "../pages/user/privacy-policy-page";
 import UserAuthPage from "../pages/user/user-auth-page";
 import UserTemplate from "../templates/user-template";
 
@@ -12,11 +13,12 @@ const LinkRoutes = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/">
-          <Route index element={<UserTemplate><HomePage /></UserTemplate>}/>
-          <Route path="contact" element={<UserTemplate><ContactDetailPage /></UserTemplate>}/>
-          <Route path="auth" element={<UserTemplate><UserAuthPage /></UserTemplate>}/>
-          <Route path="unauthorized" element={<UserTemplate><UnAuthorizedPage/></UserTemplate>}></Route>
-          <Route path="*" element={<UserTemplate><NotFoundPage/></UserTemplate>}></Route>
+          <Route index element={<UserTemplate><HomePage /></UserTemplate>} />
+          <Route path="contact" element={<UserTemplate><ContactDetailPage /></UserTemplate>} />
+          <Route path="auth" element={<UserTemplate><UserAuthPage /></UserTemplate>} />
+          <Route path="unauthorized" element={<UserTemplate><UnAuthorizedPage /></UserTemplate>}></Route>
+          <Route path="privacy-policy" element={<UserTemplate><PrivacyPolicyPage /></UserTemplate>}></Route>
+          <Route path="*" element={<UserTemplate><NotFoundPage /></UserTemplate>}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

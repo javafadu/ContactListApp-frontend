@@ -9,5 +9,15 @@ export const questionConfirmCancel = (title, text = "") => {
         showCancelButton: true,
 
     });
+};
 
-}
+export const toast = (title, icon = "info") => {
+    /* info , success, warning, error, question*/
+    return Swal.fire({
+        position: "top-end",
+        icon,
+        title,
+        showConfirmButton: false,
+        timer: 3000,
+    });
+};

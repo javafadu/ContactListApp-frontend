@@ -52,8 +52,8 @@ const AuthMenu = () => {
                 :
 
                 <div >
-                    <Button variant="light" as={Link} to="/auth" className="mx-2">Login</Button>
-                    <Button variant="primary" as={Link} to="/auth">Register</Button>
+                    <Button variant="light" as={Link} to="/auth?type=login" className="mx-2">Login</Button>
+                    <Button variant="primary" as={Link} to="/auth?type=register">Register</Button>
                 </div>
 
 
