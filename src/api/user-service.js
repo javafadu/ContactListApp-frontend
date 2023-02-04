@@ -17,3 +17,20 @@ export const getAuthUser = () => {
     return axios.get(`${API_URL}/users`, { headers: authHeader() });
 };
 
+
+
+export const getAllUsers = (
+    page = 0,
+    size = 6,
+    sort = "id",
+    direction = "ASC",
+    q = ""
+) => {
+    return axios.get(
+        `${API_URL}/users/all?page=${page}&size=${size}&sort=${sort}&direction=${direction}&q=${q}`,
+        {
+            headers: authHeader(),
+        }
+    );
+};
+
