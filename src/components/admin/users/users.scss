@@ -1,0 +1,41 @@
+@use "../../../assets/scss/variables" as v;
+
+.admin-users-page {
+
+    @media (min-width: 992px) {
+
+        width: 80%;
+
+    }
+}
+
+.search-box {
+    border-radius: 0.4rem;
+
+    svg {
+        color: orangered;
+        font-size: 3rem;
+    }
+}
+
+
+.search-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    padding: 0;
+    height: 6rem;
+    background-color: v.$color3;
+    padding-top: 0.8rem;
+
+}
+
+button {
+
+    &:disabled {
+        background-color: v.$color3 !important;
+        border: none;
+        opacity: 1;
+    }
+}

@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { logout } from '../../../../store/slices/auth-slice';
 import { questionConfirmCancel } from '../../../../utils/functions/swal';
 import "./auth-menu.scss";
+import secureLocalStorage from "react-secure-storage";
 
 const AuthMenu = () => {
 
@@ -17,7 +18,7 @@ const AuthMenu = () => {
         questionConfirmCancel("Are you sure you want to log out?").then(result => {
             if (result.isConfirmed) {
                 dispatch(logout());
-                // make empty local storage
+                secureLocalStorage.removeItem("token");
                 navigate("/");
             }
         })
