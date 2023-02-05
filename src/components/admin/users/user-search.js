@@ -27,7 +27,7 @@ const UserSearch = () => {
                     type="text"
                     maxLength={30}
                     className="form-control border-light my-2 mx-2"
-                    placeholder="User Name"
+                    placeholder="User Name or E-mail"
                     value={input}
                     onChange={(e) => {
                         setInput(e.target.value);

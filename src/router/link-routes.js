@@ -4,6 +4,7 @@ import AdminAddUser from "../components/admin/user-add/user-add";
 import AdminUserEdit from "../components/admin/user-edit/user-edit";
 import AdminUsers from "../components/admin/users/users";
 import ScrollToTop from "../components/common/scroll-to-top/scroll-to-top";
+import AdminContactPage from "../pages/admin/admin-contact-page";
 import AdminHomePage from "../pages/admin/admin-home-page";
 import NotFoundPage from "../pages/common/not-found-page";
 import UnAuthorizedPage from "../pages/common/un-authorized-page";
@@ -34,6 +35,7 @@ const LinkRoutes = () => {
             <Route path="users" element={<ProtectedRoute admin={true}><AdminTemplate><AdminUsers /></AdminTemplate></ProtectedRoute>}></Route>
             <Route path="add-user" element={<ProtectedRoute admin={true}><AdminTemplate><AdminAddUser /></AdminTemplate></ProtectedRoute>}></Route>
             <Route path="edit-user" element={<ProtectedRoute admin={true}><AdminTemplate><AdminUserEdit /></AdminTemplate></ProtectedRoute>}></Route>
+            <Route path="contacts" element={<ProtectedRoute admin={true}><AdminTemplate><AdminContactPage /></AdminTemplate></ProtectedRoute>}></Route>
 
           </Route>
 

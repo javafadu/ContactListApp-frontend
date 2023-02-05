@@ -31,7 +31,7 @@ const SideBar = () => {
   };
 
   return (
-    <Navbar bg="dark" expand="lg" className="admin-navbar">
+    <Navbar bg="dark" expand="lg" className="admin-navbar" variant="dark">
       <Container>
         <div className="title-icon">
           <img src={adminIcon} alt="" className="img-fluid" />
