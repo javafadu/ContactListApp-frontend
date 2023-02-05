@@ -47,6 +47,7 @@ const UserList = () => {
             if (numberOfElements === 0 && searchQ.length > 0)
                 setResult("No results for: " + searchQ);
 
+
             setPagination({
                 numberOfElements,
                 size,
@@ -72,7 +73,7 @@ const UserList = () => {
             ) : (
                 <Container className="list-container">
                     <h2>{result}</h2>
-                    <Row>
+                    <Row className="table-header">
                         <Col md={1}>ID</Col>
                         <Col md={3}>NAME</Col>
                         <Col md={3}>E-MAIL</Col>
