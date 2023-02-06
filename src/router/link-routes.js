@@ -24,7 +24,7 @@ const LinkRoutes = () => {
       <Routes>
         <Route path="/">
           <Route index element={<UserTemplate><HomePage /></UserTemplate>} />
-          <Route path="contact" element={<UserTemplate><ContactDetailPage /></UserTemplate>} />
+          <Route path="contact/:contactId" element={<UserTemplate><ContactDetailPage /></UserTemplate>} />
           <Route path="auth" element={<UserTemplate><UserAuthPage /></UserTemplate>} />
           <Route path="profile" element={<ProtectedRoute><UserTemplate><ProfilePage /></UserTemplate></ProtectedRoute>}></Route>
           <Route path="unauthorized" element={<UserTemplate><UnAuthorizedPage /></UserTemplate>}></Route>
