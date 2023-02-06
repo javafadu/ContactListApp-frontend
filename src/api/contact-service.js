@@ -16,3 +16,7 @@ export const getAllContactsWithPaging = (
     );
 };
 
+export const getContactWithId = (id) => {
+    return axios.get(`${API_URL}/contacts/${id}`);
+};
+
