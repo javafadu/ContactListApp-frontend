@@ -31,7 +31,7 @@ const Contacts = () => {
   const handleChange = (e) => {
     setSearcQ(e.target.value);
     console.log(e.target.value);
-    loadData(0);
+  
   };
 
 
